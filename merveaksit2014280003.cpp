@@ -6,7 +6,7 @@ using namespace std;
 
 int main(int argc, char** argv) {
 	
-	int soru_sayisi=10,ogrenci_sayisi,ogrenci_numarasi,puan,toplam=0;
+	int soru_sayisi=10,ogrenci_sayisi,ogrenci_numarasi,puan,toplam=0,ortalama=0,max,maxpuan,minpuan,medyan,range;
 	char cevap_anahtari[10]={'A','C','B','A','E','D','D','A','E','C'};
 	char ogrencinin_cevaplari[10];
 	
@@ -44,6 +44,7 @@ int main(int argc, char** argv) {
 				else if(ogrencinin_cevaplari[i]==0){
 					puan+=0;
 				}
+			
 			}
 			if(puan<=0){
 				puan=0;
@@ -57,6 +58,16 @@ int main(int argc, char** argv) {
 	else{
 		cout << "gecersiz sayi girisi.(bir sinifin maksimum ogrenci sayisi 100 olacaktir)";
 	}
+	cout << "en yuksek puan = " << maxpuan << endl; 
+	cout << "en dusuk puan = " << minpuan << endl;
+	ortalama = toplam/ogrenci_sayisi;
+	cout << "ortalama = " << ortalama << endl;
+	sinav << endl << "EN YUKSEK PUAN = " << maxpuan;
+	sinav << endl << "EN DUSUK PUAN = " << minpuan;
+	sinav << endl << "ORTALAMA = " << ortalama;
+	sinav << endl << "MEDYAN = " << medyan;
+	sinav << endl << "ACIKLIK-RANGE = " << range;
 	sinav.close();
+	
 	return 0;
 }
