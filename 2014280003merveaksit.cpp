@@ -24,6 +24,7 @@ int main(int argc, char** argv) {
 		for(int i=1;i<=ogrenci_sayisi;i++){
 			cout << "ogrencinin numarasini giriniz = ";
 			cin >> ogrenci_numarasi ;
+			cout << "cevaplari buyuk harflerle giriniz." << endl;
 			for(int j=0;j<10;j++){
 				cout << j+1 << ".nci soru = ";
 				cin >> ogrencinin_cevaplari[j];
